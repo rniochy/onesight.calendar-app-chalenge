@@ -1,0 +1,42 @@
+$color: rgb(00, 154, 154);
+
+.displayappointment_container {
+    padding: 0.2rem;
+    .container {
+        li {
+            .content {
+                border: 1px solid #9a9a9a;
+                border-radius: .2rem;
+                padding: 0.4rem;
+                font-size: small;
+                h2 {
+                    font-weight: 700;
+                    font-size: small;
+                    margin-bottom: 0.2rem;
+                }
+                p {
+                    font-size: medium;
+                    font-weight: 400;
+                    font-size: small;
+                }
+            }
+            .content:hover {
+                cursor: pointer;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                column-gap: .2rem;
+                margin-top: 0.3rem;
+                input {
+                    padding: 0.3rem;
+                    border-radius: .2rem;
+                    font-size: small;
+                    font-weight: 600;
+                    color: $color;
+                }
+                
+            }
+        }
+    }
+}

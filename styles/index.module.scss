@@ -1,0 +1,90 @@
+.container {
+      margin-top: 1rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      aside {
+          margin-top: 1rem;
+          width: 12.5rem;
+      }
+
+      .calendarContainer {
+           display: flex;
+           flex-direction: column;
+           row-gap: 0.5rem;
+      }
+}
+
+@media screen and (min-width: 481px) {
+     .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     
+          aside {
+              margin-top: 1rem;
+              width: 15rem;
+          }
+    
+          .calendarContainer {
+               display: flex;
+               flex-direction: column;
+               row-gap: 0.5rem;
+          }
+    }
+     
+}
+@media screen and (min-width: 660px) {
+     .container {
+     
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+     
+          aside {
+              margin-top: 1rem;
+              width: 15rem;
+          }
+    
+          .calendarContainer {
+               margin-top: -27rem;
+               margin-right: 0.2rem;
+               display: flex;
+               flex-direction: column;
+               row-gap: 0.5rem;
+          }
+    }
+     
+}
+@media screen and (min-width: 998px) {
+     .container {
+          height: 70vh;
+          margin-top: 0rem;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+       
+     
+          aside {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               float: right;
+          }
+          .calendarContainer {
+               margin-top: 8.8rem;
+               margin-right: 0.2rem;
+               display: flex;
+               flex-direction: column;
+               row-gap: 0.5rem;
+
+          }
+    
+  
+    }
+     
+}

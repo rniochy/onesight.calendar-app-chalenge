@@ -1,0 +1,13 @@
+.container {
+     height: 90vh;
+     display: flex;
+     flex-direction: row;
+     margin-top: 2rem;
+
+     aside {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           border-left: 1px solid #ccc;;
+           margin-left: .5rem;
+     }
+}

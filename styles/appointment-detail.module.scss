@@ -1,0 +1,57 @@
+.content {
+    display: grid;
+    place-items: center;
+    margin-top: 1rem;
+    
+    .appointment_detail {
+        width: 12rem;
+        height: 50vh;
+        display: grid;
+        grid-template-rows: 43vh 6vh;
+        padding: 0.1rem;
+        border: 1px solid #000;
+        border-radius: 0.1rem;
+        .content_button {
+             display: flex;
+             flex-direction: row;
+             column-gap: 0.4%;
+             margin-top: .5rem;
+             
+             input {
+                 width: 57%;
+                 border-radius: 0.1rem;
+                 height: 1.2rem;
+                 font-size: x-small;
+                 border: 1px solid #ccc;
+                 transition: 500ms ease-in;
+             }
+             input:hover {
+                 background-color: #ccc ;
+              }
+             
+
+        }
+
+        .content_detail {
+            p {
+                font-size: small;
+                height: max-content;
+                width: 11.5rem;
+                overflow: hidden
+            } 
+            label {
+                 font-size: small;
+                 font-weight: 700;
+                 margin-top: 0.3rem;
+            } 
+            h3 { 
+                margin: 0.5rem;
+                font-size: medium;
+                text-align: center;
+                color: rgb(00, 154, 154);
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+}

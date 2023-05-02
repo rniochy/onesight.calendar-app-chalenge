@@ -1,0 +1,34 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-size: large;
+}
+@media screen and (min-width: 659px) {
+  .appoiment_field_hide {
+    visibility: hidden;
+    transition: all 500ms ease-in-out;
+}
+}
+@media screen and (max-width: 997px) {
+  .appoiment_field_hide {
+    display: none;
+    transition: all 500ms ease-in-out;
+}
+}
+
+
+// appoiment_field

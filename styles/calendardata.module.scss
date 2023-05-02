@@ -1,0 +1,68 @@
+$colun-of-calendar: repeat(7, 1fr);
+$border-radius: 5px;
+$border-color: #9a9a9a;
+$color: rgb(00, 154, 154);
+
+.approve {
+     background-color: rgb(16, 255, 16);
+ }
+ .cancel {
+      background-color: rgb(255, 66, 66);
+ }
+
+.calendarData {
+     border: 1px solid  $border-color;
+     padding: 12px;
+     border-radius: $border-radius;  
+     grid-template-columns: 1fr 1fr;
+     
+}
+
+.weekdays {
+     display: grid;
+     grid-template-columns: $colun-of-calendar;
+     column-gap: 0rem;
+     user-select: none;
+     margin-left: 0.2rem;
+}
+.days_of_week {
+     // margin-top: 0.5rem;
+     display: grid;
+     grid-template-columns: $colun-of-calendar;
+     column-gap: 0rem;
+     user-select: none;   
+
+     li {
+          border: 1px solid rgba($border-color, 0.724);
+          margin: 0.1rem;
+          padding: 2px;
+          border-radius: $border-radius;
+          text-align: center;
+          color: rgba(00, 154, 154); ;
+     }
+
+     li:hover{
+          border-color: $color;
+          color: $border-color;
+     }
+     li:active{
+          background-color: $color;
+          color: $border-color;
+     }
+     .active{
+          background: $color ;
+          color: #fff;
+    }
+ }
+ @media screen and (min-width: 481px) {
+     .days_of_week {
+          column-gap: 0.5rem;
+     }
+     
+}
+ @media screen and (min-width: 769px) {
+     .days_of_week {
+          column-gap: 0.5rem;
+     }
+     
+}
